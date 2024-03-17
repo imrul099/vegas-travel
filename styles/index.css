@@ -9,7 +9,7 @@
 
 header {
   margin: 50px auto;
-  max-width: 1200px;
+  max-width: 1250px;
 }
 
 nav {
@@ -60,7 +60,7 @@ nav {
 /* main section */
 main {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1250px;
 }
 
 /* explore section */
@@ -78,6 +78,7 @@ main {
   width: 100%;
   height: 500px;
   opacity: 3.5;
+  border-radius: 8px;
 }
 
 .explore-section h2 {
@@ -134,15 +135,15 @@ main {
 }
 
 /* card section */
-.card-section{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+.card-section {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
-.card-text-container{
-    flex: 1;
+.card-text-container {
+  flex: 1;
 }
 
 .card-text-container h3 {
@@ -152,30 +153,111 @@ main {
   line-height: normal;
 }
 
-.card-text-container p{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #424247;
-    margin-top: 16px;
-    margin-bottom: 16px;
+.card-text-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #424247;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-.card-text-container ul li{
-    margin-bottom: 10px;
-    margin-left: 30px;
-    
+.card-text-container ul li {
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
 
-.btn-primary{
-    color: #fff;
-    background: #ff5400;
-    font-size: 1.25rem;
-    font-weight: 800;
-    padding: .87rem 2.18rem;
-    border-radius: .5rem;
-    border: none;
+.btn-primary {
+  color: #fff;
+  background: #ff5400;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 0.87rem 2.18rem;
+  border-radius: 0.5rem;
+  border: none;
 }
 
-.img-container img{
-    width: 100%;
+.img-container img {
+  width: 100%;
+}
+
+/* grid section */
+.grid-section {
+  margin-top: 100px;
+}
+
+.grid-section h3 {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.grid-section p{
+  color: #424247;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+}
+
+.grid-section h3,
+p {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+  grid-template-areas:
+    "m m m m m m i i i i i i"
+    "s s s s na na na na na k k k"
+    "bd bd bd bd bd band band band band band band band";
+    margin-top: 3rem;
+}
+
+.maldives {
+  background-image: url(../Images/Rectangle\ 5.png);
+  grid-area: m;
+}
+.indonesia {
+  background-image: url(../Images/Rectangle\ 8.png);
+  grid-area: i;
+}
+.srilanka {
+  background-image: url(../Images/Rectangle\ 6.png);
+  grid-area: s;
+}
+.north-america {
+  background-image: url(../Images/Rectangle\ 7.png);
+  grid-area: na;
+}
+.kasmir {
+  background-image: url(../Images/Rectangle\ 9.png);
+  grid-area: k;
+}
+.bangladesh {
+  background-image: url(../Images/Rectangle\ 11.png);
+  grid-area: bd;
+}
+.bandorbon {
+  background-image: url(../Images/Rectangle\ 10.png);
+  grid-area: band;
+}
+
+.grid-container div {
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  height: 300px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.grid-container div h3{
+  color: #fff;
+  font-size: 1.7rem;
+  font-size: 800;
 }
