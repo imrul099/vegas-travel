@@ -23,11 +23,13 @@ nav {
   align-items: center;
 }
 
-.icon-container img {
+.icon-container img,
+.footer img {
   width: 50px;
 }
 
-.icon-container h3 {
+.icon-container h3,
+.footer h3 {
   color: #131318;
   font-size: 2.25rem;
   font-weight: 800;
@@ -193,16 +195,18 @@ main {
   margin-bottom: 10px;
 }
 
-.grid-section p{
+.grid-section p {
   color: #424247;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-
 }
 
-.grid-section h3,
-p {
+.grid-section h3 {
+  text-align: center;
+}
+
+.grid-section p {
   text-align: center;
 }
 
@@ -214,7 +218,7 @@ p {
     "m m m m m m i i i i i i"
     "s s s s na na na na na k k k"
     "bd bd bd bd bd band band band band band band band";
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .maldives {
@@ -256,8 +260,107 @@ p {
   padding: 100px 0;
 }
 
-.grid-container div h3{
+.grid-container div h3 {
   color: #fff;
   font-size: 1.7rem;
   font-size: 800;
+}
+
+/* service section */
+.service-section {
+  margin-top: 100px;
+  display: flex;
+  gap: 24px;
+}
+
+.text-service {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  border: 1px solid salmon;
+  border-radius: 8px;
+}
+
+.text-service h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.text-service p {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.text-service [type="text"] {
+  padding: 1rem 0px;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-bottom: 1.25rem;
+}
+
+.text-service button{
+  padding: 1rem 0px;
+  border-radius: 8px;
+  border: none;
+  background: #ff5400;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.service-img {
+  width: 60%;
+}
+
+.service-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* footer section */
+.footer {
+  padding: 50px 0;
+  margin-top: 100px;
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: #5a5a5a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 1rem;
+}
+
+.mediam {
+  font-size: 1.75rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.footer hr {
+  color: rgb(235, 172, 161);
+  width: 800px;
+  height: 1px;
+  margin: 0 auto;
 }
